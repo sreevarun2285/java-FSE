@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+        <a href="help.html" target="_blank">Help</a>
+    </nav>
+    <main>
+        <section id="home">
+            <div id="welcomeBanner">
+                <h1>Welcome to the Event Portal</h1>
+                <p>Check out our latest events!</p>
+                <span style="color: rgb(21, 87, 9); font-weight: bold;">Special Offer: 20% off!</span>
+            </div>
+        </section>
+        <section id="events">
+            <h2>Past Events</h2>
+            <table>
+                <caption>Community Events Gallery</caption>
+                <tr>
+                    <td><img src="event1.jpg" alt="Event 1" title="Event 1" class="event-image"></td>
+                    <td><img src="event2.jpg" alt="Event 2" title="Event 2" class="event-image"></td>
+                    <td><img src="event3.jpg" alt="Event 3" title="Event 3" class="event-image"></td>
+                </tr>
+                <tr>
+                    <td><img src="event4.jpg" alt="Event 4" title="Event 4" class="event-image"></td>
+                    <td><img src="event5.jpg" alt="Event 5" title="Event 5" class="event-image"></td>
+                    <td><img src="event6.jpg" alt="Event 6" title="Event 6" class="event-image"></td>
+                </tr>
+            </table>
+        </section>
+        <section id="contact">
+            <centre>
+                <div id="container">
+            <h2 style="color: goldenrod;">Event Registration</h2>
+            <form id="registrationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required autofocus style="border-radius: 5px;">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required style="border-radius: 5px;">
+                <br><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required style="border-radius: 5px;">
+                <br>
+                <br>
+                <label for="eventType">Type:</label>
+                <select id="eventType" name="eventType" required style="border-radius: 5px;">
+                    <option value="">Select an event</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="seminar">Seminar</option>
+                    <option value="conference">Conference</option>
+                </select>
+                <br>
+                <br>
+              </div>
+            </centre>
+           
+               
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message here..."></textarea>
+                <button type="submit">Register</button>
+                <output id="confirmationMessage"></output>
+            </form>
+        </section>
+        <section>
+            <h2>Feedback</h2>
+            <textarea id="feedback" placeholder="Your feedback here..."></textarea>
+        </section>
+        <section>
+            <h2>Event Promo Video</h2>
+            <video id="promoVideo" controls>
+                <source src="promo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <button id="findEvents">Find Nearby Events</button>
+        <div id="location"></div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Event Portal. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
